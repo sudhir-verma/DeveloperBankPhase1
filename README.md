@@ -11,3 +11,5 @@ Upcoming
 Section 4 - Handle deployment, portability & scalability of microservices using Docker
 Section 5 - Configurations Management in Microservices
 Section 6 - Using MySQL DBs inside microservices
+
+Note- Different containerization approaches are used across services for learning: the Account Service uses a Dockerfile, the Cards Service leverages the Google Jib library, and the Loans Service is built using Buildpacks
