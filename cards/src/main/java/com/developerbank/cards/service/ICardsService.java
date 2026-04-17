@@ -1,6 +1,7 @@
 package com.developerbank.cards.service;
 
 import com.developerbank.cards.dto.CardsDto;
+import com.developerbank.cards.event.LoanRequestEvent;
 
 public interface ICardsService {
 
@@ -31,4 +32,5 @@ public interface ICardsService {
      */
     boolean deleteCard(String mobileNumber);
 
+    void processRequest(LoanRequestEvent event);
 }

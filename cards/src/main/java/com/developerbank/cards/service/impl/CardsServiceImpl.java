@@ -3,6 +3,7 @@ package com.developerbank.cards.service.impl;
 import com.developerbank.cards.constants.CardsConstants;
 import com.developerbank.cards.dto.CardsDto;
 import com.developerbank.cards.entity.Cards;
+import com.developerbank.cards.event.LoanRequestEvent;
 import com.developerbank.cards.exception.CardAlreadyExistsException;
 import com.developerbank.cards.exception.ResourceNotFoundException;
 import com.developerbank.cards.mapper.CardsMapper;
@@ -86,6 +87,19 @@ public class CardsServiceImpl implements ICardsService {
         );
         cardsRepository.deleteById(cards.getCardId());
         return true;
+    }
+
+    /**
+     * @param event - Input LoanRequestEvent
+     * process the loan request
+     */
+    @Override
+    public void processRequest(LoanRequestEvent event) {
+       // Implement the logic to process the loan
+        System.out.println("Event Type : "+event.getEventType());
+        System.out.println("Mobile Number : "+event.getMobileNumber());
+        System.out.println("Loan Id : "+event.getLoadRequestId());
+        System.out.println("Date and Time : "+event.getTimestamp());
     }
 
 

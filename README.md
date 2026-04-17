@@ -5,6 +5,7 @@ Phase 2-  Building microservices using Spring Boot
 Phase 3 - How do we right size our microservices & identify boundaries
 Phase 4 - Implementation of Swagger.
 Phase 5 - Implementation of inbuild database.
+Phase 6 - Kafka Implementation in Cards (Producer) and Loan service (Consumer)
 
 Upcoming
 
